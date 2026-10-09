@@ -3,6 +3,10 @@
 > **MBA em UX/UI & Product Design com Inteligência Artificial**  
 > *Avaliação de Performance e Experiência com IA*
 
+🌐 **Acesse o site publicado:** [https://dantezim.github.io/case-duolingo-onboarding/](https://dantezim.github.io/case-duolingo-onboarding/)
+
+---
+
 Website interativo desenvolvido para apresentar o estudo de caso de UX Analytics e Redesign do Onboarding do Duolingo, baseado em dados sintéticos de 8.000 usuários, protocolo experimental no Maze com 22 participantes, e adequação ética de IA segundo o Scorecard Humanifesto.
 
 ---
