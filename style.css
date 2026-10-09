@@ -1,0 +1,367 @@
+/* Duolingo Visual Guidelines & Case Study Theme */
+:root {
+  --duo-green: #58CC02;
+  --duo-green-dark: #46A302;
+  --duo-green-light: #D7FFB8;
+  --duo-green-bg: #E8F5E9;
+  
+  --duo-blue: #1CB0F6;
+  --duo-blue-dark: #1899D6;
+  --duo-blue-light: #DDF4FF;
+  
+  --duo-orange: #FF9600;
+  --duo-orange-dark: #E08500;
+  --duo-orange-light: #FFEEDB;
+  
+  --duo-yellow: #FFC800;
+  --duo-yellow-dark: #E5A500;
+  
+  --duo-red: #FF4B4B;
+  --duo-red-dark: #EA2B2B;
+  
+  --duo-card-bg: #FFFFFF;
+  --duo-page-bg: #F7F7F5;
+  --duo-text-main: #3C3C3C;
+  --duo-text-muted: #777777;
+  --duo-border: #E5E7EB;
+  --duo-border-darker: #D1D5DB;
+  
+  --duo-dark-section: #152817;
+  --duo-dark-card: #1C361F;
+}
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--duo-page-bg);
+  color: var(--duo-text-main);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Duolingo 3D Button Utility */
+.duo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.duo-btn-green {
+  background-color: var(--duo-green);
+  color: white;
+  border: 2px solid var(--duo-green-dark);
+  box-shadow: 0 4px 0 var(--duo-green-dark);
+}
+.duo-btn-green:hover {
+  background-color: #61e002;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 var(--duo-green-dark);
+}
+.duo-btn-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--duo-green-dark);
+}
+
+.duo-btn-blue {
+  background-color: var(--duo-blue);
+  color: white;
+  border: 2px solid var(--duo-blue-dark);
+  box-shadow: 0 4px 0 var(--duo-blue-dark);
+}
+.duo-btn-blue:hover {
+  background-color: #28b8fc;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 var(--duo-blue-dark);
+}
+.duo-btn-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--duo-blue-dark);
+}
+
+.duo-btn-orange {
+  background-color: var(--duo-orange);
+  color: white;
+  border: 2px solid var(--duo-orange-dark);
+  box-shadow: 0 4px 0 var(--duo-orange-dark);
+}
+.duo-btn-orange:hover {
+  background-color: #ffa11a;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 var(--duo-orange-dark);
+}
+.duo-btn-orange:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--duo-orange-dark);
+}
+
+.duo-btn-outline {
+  background-color: white;
+  color: var(--duo-text-main);
+  border: 2px solid var(--duo-border-darker);
+  box-shadow: 0 4px 0 var(--duo-border-darker);
+}
+.duo-btn-outline:hover {
+  background-color: #f9fafb;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 var(--duo-border-darker);
+}
+.duo-btn-outline:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 var(--duo-border-darker);
+}
+
+/* Duolingo Card with solid bottom elevation */
+.duo-card {
+  background: white;
+  border-radius: 1.25rem;
+  border: 2px solid #E5E7EB;
+  box-shadow: 0 4px 0 #E5E7EB;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.duo-card-interactive:hover {
+  transform: translateY(-3px);
+  border-color: #D1D5DB;
+  box-shadow: 0 7px 0 #D1D5DB;
+}
+
+.duo-card-green {
+  background: #58CC02;
+  color: white;
+  border: 2px solid #46A302;
+  box-shadow: 0 4px 0 #46A302;
+}
+
+.duo-card-orange {
+  background: #FF9600;
+  color: white;
+  border: 2px solid #E08500;
+  box-shadow: 0 4px 0 #E08500;
+}
+
+/* Speech Bubble (Balão de fala estilo Duolingo) */
+.speech-bubble {
+  position: relative;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1rem 1.25rem;
+  border: 2px solid #E5E7EB;
+  box-shadow: 0 4px 0 #E5E7EB;
+  font-weight: 700;
+  color: #3C3C3C;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: 28px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 10px 0 10px;
+  border-color: #E5E7EB transparent transparent transparent;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 8px 0 8px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.speech-bubble-left::before {
+  left: 24px;
+  right: auto;
+}
+.speech-bubble-left::after {
+  left: 26px;
+  right: auto;
+}
+
+/* Category Tag / Kicker */
+.duo-kicker {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #15803d;
+}
+
+/* Funnel bars */
+.funnel-bar-wrapper {
+  background-color: #F3F4F6;
+  border-radius: 9999px;
+  height: 2.25rem;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #E5E7EB;
+}
+
+.funnel-bar {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.funnel-bar-green {
+  background-color: var(--duo-green);
+  border-right: 3px solid var(--duo-green-dark);
+}
+
+.funnel-bar-orange {
+  background-color: var(--duo-orange);
+  border-right: 3px solid var(--duo-orange-dark);
+}
+
+/* Badge tags */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+}
+
+/* Phone Mockup Frame */
+.phone-mockup {
+  border: 10px solid #1F2937;
+  border-radius: 2.5rem;
+  background: #111827;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.phone-mockup .notch {
+  width: 120px;
+  height: 18px;
+  background-color: #1F2937;
+  margin: 0 auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #58CC02;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* ========================================================
+   WCAG 2.2 AA ACCESSIBILITY ENHANCEMENTS
+   ======================================================== */
+
+/* 1. Indicador de Foco Visível Global de Alto Contraste (Critério 2.4.7 / 2.4.11) */
+*:focus-visible {
+  outline: 3px solid #1CB0F6 !important;
+  outline-offset: 3px !important;
+  border-radius: 6px;
+}
+
+/* 2. Skip Link (Pular para Conteúdo Principal - Critério 2.4.1) */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  background-color: #1F2937;
+  color: #FFFFFF;
+  padding: 0.75rem 1.25rem;
+  font-weight: 800;
+  font-size: 0.875rem;
+  border-radius: 0.75rem;
+  z-index: 9999;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border: 2px solid #58CC02;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* 3. Classes para Leitores de Tela (Screen Readers Only - Critério 1.3.1) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 4. Suporte a Usuários Sensíveis a Movimento (Critério 2.3.3) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-float,
+  .animate-pulse-subtle {
+    animation: none !important;
+  }
+}
+
