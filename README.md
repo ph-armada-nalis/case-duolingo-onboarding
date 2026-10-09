@@ -1,4 +1,4 @@
-# 🦉 Duolingo Onboarding Redesign · Case Study
+# Duolingo Onboarding Redesign · Case Study
 
 > **MBA em UX/UI & Product Design com Inteligência Artificial**  
 > *Avaliação de Performance e Experiência com IA*
