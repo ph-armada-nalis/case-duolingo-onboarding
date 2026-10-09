@@ -3,7 +3,7 @@
 > **MBA em UX/UI & Product Design com Inteligência Artificial**  
 > *Avaliação de Performance e Experiência com IA*
 
-🌐 **Acesse o site publicado:** [https://dantezim.github.io/case-duolingo-onboarding/](https://dantezim.github.io/case-duolingo-onboarding/)
+🌐 **Acesse o site publicado:** [https://ph-armada-nalis.github.io/case-duolingo-onboarding/](https://ph-armada-nalis.github.io/case-duolingo-onboarding/)
 
 ---
 
